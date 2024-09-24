@@ -176,7 +176,7 @@
                                     style="color:black"></i>
                                 <p style="color:black;">Dashboard</p>
                             </a>
-                        <!--   
+                            <!--
                             <div id="submenu-1" class="collapse submenu" style="background-color: white">
                                 <ul class="nav flex-column">
                                     <li class="nav-item">
@@ -290,7 +290,8 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
-                                data-target="#submenu-9" aria-controls="submenu-5"><i class="fas fa-file" style="color:white;"></i>
+                                data-target="#submenu-9" aria-controls="submenu-5"><i class="fas fa-file"
+                                    style="color:white;"></i>
                                 <p style="color:white; text-indent: 7px">Approval</p>
                             </a>
                             <div id="submenu-9" class="collapse submenu" style="">
@@ -744,7 +745,7 @@
     <div class="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" style="left: 50%">
                     Copyright © 2024. All rights reserved.
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
