@@ -1,4 +1,4 @@
-#HR management system 
+# HR management system 
 
 "Run server in terminal"
   = to run the laravel server =
