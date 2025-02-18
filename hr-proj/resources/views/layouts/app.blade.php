@@ -18,6 +18,7 @@
         @livewireStyles
     </head>
     <body class="font-sans antialiased">
+        <h1>hello</h1>
         <x-banner />
 
         <div class="min-h-screen bg-gray-100">

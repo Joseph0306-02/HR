@@ -53,7 +53,7 @@
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="page-header">
-                                <h2 class="pageheader-title">Dashboard</h2>
+                                <h2 class="pageheader-title">Asset Review Dasboard</h2>
                                 <p class="pageheader-text">Nulla euismod urna eros, sit amet scelerisque torton lectus
                                     vel mauris facilisis faucibus at enim quis massa lobortis rutrum.</p>
                                 <!--
@@ -76,33 +76,8 @@
                     <!-- ============================================================== -->
                     <!-- end pageheader  -->
                     <!-- ============================================================== -->
-                    <div class="ecommerce-widget">
+                   
 
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-8 col-md-8 col-sm-14 col-14">
-                                <div class="card">
-                                    <div class="card-body" style="height: 500px">
-                                        <h5 class="text-muted">Progress of Projects</h5>
-                                        <hr>
-                                       
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-xl-6 col-lg-8 col-md-8 col-sm-14 col-14" id="row1">
-                                <div class="card">
-                                    <div class="card-body" style="height: 500px">
-                                        <table style="width: 60%">
-                                            <tr>
-                                                <h5 class="text-muted">Progress of Projects</h5>
-        
-                                            </tr>
-                                        </table>
-                                        <hr>
-                                    </div>
-
-                                    
                                 </div>
                             </div>
                         </div>

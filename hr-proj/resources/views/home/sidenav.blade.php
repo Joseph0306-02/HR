@@ -1,7 +1,7 @@
 <div class="nav-left-sidebar " style="background-color: #463426;>
     <div class="menu-list">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+        <a class="d-xl-none d-lg-none" href="#">Logistics Dashboard</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -9,22 +9,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav flex-column">
                 <li class="nav-divider">
-                    <p style="color:white;"> Menu </p>
+                    <center>
+                        <p style="color:white;">
+                            <a href="{{ url('/dashboard') }}" style="color: white;">DASHBOARD</a>
+                        </p>
+                    </center>
+                    
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false"
-                        data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"
-                            style="color:black"></i>
-                        <p style="color:black;">Dashboard</p>
-                    </a>
-                    <!--
+
+                    
                     <div id="submenu-1" class="collapse submenu" style="background-color: white">
                         <ul class="nav flex-column">
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-toggle="collapse"
                                     aria-expanded="false" data-target="#submenu-1-2"
                                     aria-controls="submenu-1-2">
-                                    <p style="color:black;">Employee Overview</p>
+                                    <p style="color:black;">Employee </p>
                                 </a>
                                 <div id="submenu-1-2" class="collapse submenu"
                                     style="background-color: white">
@@ -70,40 +70,39 @@
                             </li>
                         </ul>
                     </div>
-                -->
-                </li>
-
+                
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
                         data-target="#submenu-5" aria-controls="submenu-5"><i class="fa fa-shopping-cart"
                             style="color:white"></i>
-                        <p style="color:white;">Transaction</p>
+                        <p style="color:white;">Project Management</p>
                     </a>
                     <div id="submenu-5" class="collapse submenu" style="">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/data-tables.html">Data Tables</a>
+                                <a class="nav-link" href="{{ url('/projects') }}" style="color: white;">Projects Request</a>
+                                <a class="nav-link" href="{{ url('/approval') }}" style="color: white;">Project Approval</a>
+                                <a class="nav-link" href="{{ url('/tracker') }}" style="color: white;">Progress Tracker</a>
+                                
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="home.admin.dtr" data-toggle="collapse" aria-expanded="false"
-                        data-target="#submenu-6" aria-controls="submenu-5"><i class="fas fa-fw fa-table"
-                            style="color:white"></i>
-                        <p style="color:white;">DTR</p>
+                
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
                         data-target="#submenu-7" aria-controls="submenu-5"><img
                             src="home/assets/images/dollar-white.png" width="17" height="17">
-                        <p style="color:white; text-indent: 10px; ">Payroll</p>
+                        <p style="color:white; text-indent: 10px; ">Asset Management</p>
                     </a>
                     <div id="submenu-7" class="collapse submenu" style="">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/data-tables.html">Data Tables</a>
+                                <a class="nav-link" href=" {{ url('/assettracking') }}" style="color: white;">Asset Monitoring</a>
+                                <a class="nav-link" href=" {{ url('/store') }}  " style="color: white;">Asset Review</a>
+                                <a class="nav-link" href=" {{ url ('/tracker') }}" style="color: white;">Asset Utilization</a>
                             </li>
                         </ul>
                     </div>
@@ -112,12 +111,15 @@
                     <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
                         data-target="#submenu-8" aria-controls="submenu-5"><img
                             src="home/assets/images/other-white.png" width="17" height="17">
-                        <p style="color:white; text-indent: 10px;">Others</p>
+                        <p style="color:white; text-indent: 10px;">Warehouse </p>
                     </a>
                     <div id="submenu-8" class="collapse submenu" style="">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/data-tables.html">Data Tables</a>
+                                <a class="nav-link" href="{{ url('/managementcontrol') }}" style="color: white;">Inventory Management Control </a>
+                                <a class="nav-link" href="{{ url('/warehouselayout') }}" style="color: white;">Warehouse Layout</a>
+                                <a class="nav-link" href="{{ url('/shipping') }}" style="color: white;">Shipping Audit </a>
+                               
                             </li>
                         </ul>
                     </div>
@@ -126,45 +128,19 @@
                     <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
                         data-target="#submenu-9" aria-controls="submenu-5"><i class="fas fa-file"
                             style="color:white;"></i>
-                        <p style="color:white; text-indent: 7px">Approval</p>
+                        <p style="color:white; text-indent: 7px">Procurment</p>
                     </a>
                     <div id="submenu-9" class="collapse submenu" style="">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="pages/data-tables.html">Data Tables</a>
+                                <a class="nav-link" href="{{ url('/performance') }}" style="color: white;">Automated Performance Dashboard</a>
+                                <a class="nav-link" href=" {{ url('/forecasting') }}  " style="color: white;">Performance Forecasatingw</a>
+                                <a class="nav-link" href=" {{ url('/forecasting') }} " style="color: white;">Procurment Analytics</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
-                        data-target="#submenu-10" aria-controls="submenu-5"><i class="fas fa-users"
-                            style="color:white"></i>
-                        <p style="color:white;">My Staffs</p>
-                    </a>
-                    <div id="submenu-10" class="collapse submenu" style="">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/data-tables.html">Staff</a>
-                            </li>
-                        </ul>
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/data-tables.html">Performance Overview</a>
-                            </li>
-                        </ul>
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/data-tables.html">Attendance</a>
-                            </li>
-                        </ul>
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="pages/data-tables.html">Data Tables</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                
                 <!--
                 <li class="nav-divider">
                     Features
